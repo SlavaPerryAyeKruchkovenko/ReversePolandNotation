@@ -1,0 +1,13 @@
+C:\repoditory\ReversePolandNotation\Rpn\obj\Debug\netcoreapp3.1\Rpn.csprojAssemblyReference.cache
+C:\repoditory\ReversePolandNotation\Rpn\obj\Debug\netcoreapp3.1\Rpn.AssemblyInfoInputs.cache
+C:\repoditory\ReversePolandNotation\Rpn\obj\Debug\netcoreapp3.1\Rpn.AssemblyInfo.cs
+C:\repoditory\ReversePolandNotation\Rpn\obj\Debug\netcoreapp3.1\Rpn.csproj.CoreCompileInputs.cache
+C:\repoditory\ReversePolandNotation\Rpn\bin\Debug\netcoreapp3.1\Rpn.exe
+C:\repoditory\ReversePolandNotation\Rpn\bin\Debug\netcoreapp3.1\Rpn.deps.json
+C:\repoditory\ReversePolandNotation\Rpn\bin\Debug\netcoreapp3.1\Rpn.runtimeconfig.json
+C:\repoditory\ReversePolandNotation\Rpn\bin\Debug\netcoreapp3.1\Rpn.runtimeconfig.dev.json
+C:\repoditory\ReversePolandNotation\Rpn\bin\Debug\netcoreapp3.1\Rpn.dll
+C:\repoditory\ReversePolandNotation\Rpn\bin\Debug\netcoreapp3.1\Rpn.pdb
+C:\repoditory\ReversePolandNotation\Rpn\obj\Debug\netcoreapp3.1\Rpn.dll
+C:\repoditory\ReversePolandNotation\Rpn\obj\Debug\netcoreapp3.1\Rpn.pdb
+C:\repoditory\ReversePolandNotation\Rpn\obj\Debug\netcoreapp3.1\Rpn.genruntimeconfig.cache
