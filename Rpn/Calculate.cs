@@ -69,7 +69,7 @@ namespace Rpn
 					if (!IsLetter(text[i]) && !Int32.TryParse(text[i].ToString(), out _)) 
 					{						
 						IsCorrect = false;
-						//MakeError(text[i],i);
+						MakeError(text[i],i);
 						break;
 					}
 						
@@ -162,13 +162,11 @@ namespace Rpn
 
 			if (closeZnak != -1 && openZnak == -1)
 			{
-				haveError = false;
-				//ReadError("закрывающая", closeZnak, out haveError, out openZnak, out closeZnak);
+				ReadError("закрывающая", closeZnak, out haveError, out openZnak, out closeZnak);
 			}
 			else if (closeZnak == -1 && openZnak != -1)
 			{
-				haveError = false;
-				//ReadError("открывающая", openZnak, out haveError, out openZnak, out closeZnak);
+				ReadError("открывающая", openZnak, out haveError, out openZnak, out closeZnak);
 			}
 			else if (closeZnak == -1 && openZnak == -1)
 			{
@@ -183,7 +181,7 @@ namespace Rpn
 			}
 				
 		}
-		/*private static void ReadError(string error,int cursor,out bool haveError,out int openZnak,out int closeZnak)
+		private static void ReadError(string error,int cursor,out bool haveError,out int openZnak,out int closeZnak)
 		{
 			Console.SetCursorPosition(cursor, 2);
 			Console.WriteLine("^");
@@ -191,7 +189,7 @@ namespace Rpn
 			haveError = true;
 			closeZnak = -1;
 			openZnak = -1;
-		}*/
+		}
 		private static double CountAnswer(List<char> mathLetter,List<double> numArray)
 		{
 			double num=0;

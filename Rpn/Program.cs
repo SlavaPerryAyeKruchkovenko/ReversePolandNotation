@@ -2,6 +2,7 @@
 using System.Text;
 using System.IO;
 using System.Collections.Generic;
+using System.Threading;
 
 namespace Rpn
 {
@@ -20,21 +21,21 @@ namespace Rpn
 			string[] inputs = File.ReadAllLines(text);
 			if(inputs.Length>=2)
 			{
-				//Console.WriteLine("Деапозон значений");
+				Console.WriteLine("Деапозон значений");
 				ParseX(inputs[1], out  x1, out  x2);
-				/*InputCoordinate(x1, x2);
+				InputCoordinate(x1, x2);
 				Console.Clear();
 
-				Console.WriteLine("Функция");*/
+				Console.WriteLine("Функция");
 				function = inputs[0];
-				//Console.WriteLine(function);
+				Console.WriteLine(function);
 				
 				haveError = y.IsCorrectFunction(function);
 				function = y.DeleteEmptyLetter(function);
 			}
 			else
 			{
-				//Console.WriteLine("Неправельно задан текстовый файл");
+				Console.WriteLine("Неправельно задан текстовый файл");
 				haveError = false;
 			}
 
@@ -46,7 +47,7 @@ namespace Rpn
 					{
 						yArray.Add(answer.ToString());
 						xArray.Add(i);
-						//Console.WriteLine(answer);
+						Console.WriteLine(answer);
 					}
 						
 			}
@@ -63,7 +64,7 @@ namespace Rpn
 			x1 = Convert.ToDouble(input[0].Trim());
 			x2 = Convert.ToDouble(input[1].Trim());
 		}
-		/*private static void InputCoordinate(double x1,double x2)
+		private static void InputCoordinate(double x1,double x2)
 		{
 			Console.WriteLine("Начальное значние");
 			Console.WriteLine(x1);
@@ -71,6 +72,7 @@ namespace Rpn
 			Console.WriteLine(x2);			
 			
 			CheckCoordinate(x1, x2);
+			Thread.Sleep(1500);
 		}
 		private static bool CheckCoordinate(double x1,double x2)
 		{
@@ -81,7 +83,7 @@ namespace Rpn
 				Console.WriteLine("Конечная кордината должна быть больше начальной \nПоробуйте снова");
 				return false;
 			}
-		}*/
+		}
 
 		private static string DrawingTable(string longestNumb)
 		{
