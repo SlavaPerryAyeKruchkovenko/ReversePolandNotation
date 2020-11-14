@@ -12,7 +12,7 @@ namespace Rpn
 		{
 			var yArray = new List<string>();
 			var xArray = new List<double>();
-			bool haveError;
+			bool IsCorrectFunction,haveError=true;
 			double answer,x1=0,x2=0;
 			string function="";
 			StreamWriter output = new StreamWriter("C:\\proga\\text.txt");
@@ -30,19 +30,19 @@ namespace Rpn
 				function = inputs[0];
 				Console.WriteLine(function);
 				
-				haveError = y.IsCorrectFunction(function);
+				IsCorrectFunction = y.IsCorrectFunction(function);
 				function = y.DeleteEmptyLetter(function);
 			}
 			else
 			{
 				Console.WriteLine("Неправельно задан текстовый файл");
-				haveError = false;
+				IsCorrectFunction = false;
 			}
 
-			if (haveError)
+			if (IsCorrectFunction)
 			for (double i = x1; i <= x2; i++)
 			{
-				answer=y.ReadNumber(i,function, out haveError);
+					answer = y.ReadNumber(i, function, out haveError);
 					if (!haveError)
 					{
 						yArray.Add(answer.ToString());
